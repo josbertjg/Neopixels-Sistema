@@ -1,0 +1,285 @@
+/* SCROLL ANIMADO */
+html{
+    scroll-behavior: smooth;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+/* BODY */
+body{
+    margin: 0% !important;
+    font-family: 'Lato', sans-serif;
+    padding: 0% !important;
+    width: 100%;
+    /* max-width: 100% !important; */
+    overflow-x: hidden !important;
+}
+.table th{
+    color:white;
+}
+#contenido{
+    background-image: url("../img/logo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+.table{
+    background-color: white;
+}
+@media screen and (max-width: 1200px) {
+    #contenido_comprar img{
+        height: 10rem;
+    }
+    #contenido_comprar .card{
+        max-width: 200px;
+        margin-right: 2rem !important;
+    }
+}
+ /* // X-Large devices (large desktops, less than 1400px) */
+ /*@media (min-width: 1242px) { */
+/* HEADER */
+header{
+    width: 100%;
+    height: 10vh;
+    box-sizing: border-box;
+    background-image:linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
+header section{
+    display: flex;
+    justify-content: space-between;
+}
+/* LOGO */
+#logo{
+    height: 85px;
+}
+/* CONTENEDOR DEL USUARIO */
+#header-usuario{
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+    color: white;
+    position: relative;
+}
+#header-usuario img{
+    z-index: 1;
+    height: 50px;
+    margin-right: 1rem;
+}
+#header-usuario p{
+    margin: 0%;
+}
+#header-usuario p + p{
+    color: greenyellow;
+}
+/* EDITANDO Y POSICIONANDO LOS CIRCULOS DEL USUARIO */
+#circle{
+    z-index: 2;
+    background-color: white;
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 3.5rem;
+    left: 2rem;
+}
+#circle::before{
+    z-index: -20;
+    content: "";
+    background-color: rgb(154, 253, 5);
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 2.1px;
+    left: 2.1px;
+}
+/* MAIN */
+main{
+    display: flex;
+}
+/* MENU */
+#menu{
+    display: block;
+    width: 20%;
+    padding: 0%;
+    height: 100%;
+}
+/* #menu > div{
+    position: fixed;
+} */
+#menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    background-color: rgb(121, 49, 255) !important;
+    width: 100%;
+    height: 110vh;
+}
+#menu ul li{
+    padding: 0 !important;
+}
+.navbar-brand{
+    padding: 0 8px;
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.8rem !important;
+}
+.offcanvas{
+    background-color: rgb(121, 49, 255) !important;
+}
+.menu-item{
+    display: block !important;
+    color: white !important;
+    text-decoration: none;
+    font-size: 1.2rem !important;
+}
+.menu-item:hover{
+    background-color: rgb(134, 68, 255);
+    cursor: pointer;
+    color: #ffec6f !important;
+}
+.collapse{
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch !important;
+    margin-top: 2rem;
+}
+/* ALINIANDO LAS ANCLAS CON LAS IMAGENES */
+a{
+    display: flex;
+    align-items: center;
+}
+/* IMAGENES DEL MENU */
+#menu img{
+    height: 30px;
+}
+/* CONTENIDO DE LA PAGINA */
+#contenido{
+    position: relative;
+    width: 100%;
+    min-height: 85vh;
+    padding: 0rem 0;
+}
+/* RESUMEN */
+#contenido_resumen{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+/* CARDS DEL RESUMEN */
+#contenido_resumen .card{
+    margin-top: 2rem;
+}
+#contenido_resumen .card-header{
+    background-color: #424242;
+}
+#contenido_resumen .card-header span{
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+}
+#estado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+/* FOPRMULARIO DE CULMINAR REGISTRO/COLLAPSE DEL RESUMEN */
+#contenido_resumen .collapse{
+    margin: 0;
+}
+/* MENSAJE DE ERROR DEL COLLAPSE */
+#error{
+    border: rgb(255, 145, 145) 5px solid !important;
+    background-color: rgb(255, 208, 208);
+}
+/* COMPRAR */
+#contenido_comprar{
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    padding: 1rem 0 1rem 0;
+}
+/* CARDS DE LA PASARELA */
+#contenido_comprar .card{
+    margin-right: 3rem;
+    width: 20rem;
+}
+#contenido_comprar  > div:last-of-type{
+    margin: 0;
+}
+/* MODAL */
+/* BOTON PARA CERRAR */
+.btn-close{
+    margin: 0!important;
+}
+/* HEADER DEL MODAL */
+.modal-header{
+    padding: 0% !important;
+}
+/* MODAL CONTENT */
+.modal-content{
+    /* width: 550px !important; */
+    overflow: hidden;
+}
+/* MODAL BODY */
+.modal-body{
+    padding: 0!important;
+}
+/* METODO DE PAGO */
+.met-pago{
+    width: 50%;
+    padding: 0!important;
+    border: 1px grey solid;
+    height: 4rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.met-pago:hover{
+    background-color: rgb(192, 158, 255);
+    cursor: pointer;
+}
+.met-pago img{
+    height: 40px;
+}
+/* INFO DEL NEGOCIO */
+#descripcion_negocio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#descripcion_negocio span:first-of-type{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+#descripcion_negocio span:last-of-type{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background: #424242;
+}
+footer p{
+    color:white;
+    margin: 0%;
+}
+footer img{
+    width: 35px;
+    height: 35px;
+    margin-right: 1rem;
+}
+/* REPORTES */
+
+ /* } */

@@ -1,0 +1,2440 @@
+/* SCROLL ANIMADO */
+html{
+    scroll-behavior: smooth;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+/* BODY */
+body{
+    margin: 0% !important;
+    font-family: 'Lato', sans-serif;
+    padding: 0% !important;
+    width: 100%;
+    /* max-width: 100% !important; */
+    overflow-x: hidden !important;
+}
+hr{
+    margin: 5px 0 !important;
+}
+/* BOTON DEL MODAL DE MENSAJES */
+#btn-mensajes{
+    visibility: hidden;
+}
+ /* // X-Small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) { 
+    header{
+        width: 100%;
+        box-sizing: border-box;
+        padding-bottom: 3rem;
+        background-image: url(../img/banner.jpg),linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+        background-size: cover;
+        background-blend-mode: soft-light;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    header section:first-child{
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-around !important;
+        align-items: center;
+    }
+    #logo{
+        height: 200px;
+        width: 200px;
+    }
+    .navbar-toggler{
+        background-image: linear-gradient(to left,rgb(169, 123, 255),rgb(89, 0, 255)) !important;
+        border: none !important;
+        padding: 0%;
+    }
+    body ul{
+        margin-left: 0rem !important;
+        margin-top: 1rem;
+        list-style-type: none;
+        list-style: none;
+        display: inline;
+    }
+    body nav ul li{
+        margin: 0px 0px 7px !important;
+        font-size: 1rem;
+    }
+    body a{
+        text-decoration: none;
+        box-sizing: border-box;
+        padding: 5px 5px 10px 5px !important;
+    }
+    body nav a{
+        color:black;
+        font-weight: bold;
+        transition: color 1s, border-top 0.1s;
+        text-align: center;
+    }
+    #btn-inicio{
+        color: rgb(89, 0, 255);
+        background-color: rgba(255, 255, 255, 0.055);
+        border-top: 5px rgb(89, 0, 255) solid !important;
+    }
+    body nav ul li a:hover:not(#btn-cotizacion,#btn-inicio){
+        color: rgb(89, 0, 255);
+        background-color: rgba(255, 255, 255, 0.055);
+        border-top: none !important;
+        cursor: pointer;
+    }
+    /* BOTON COTIZACION */
+    header section nav div{
+        margin-top: 0%;
+    }
+    #btn-cotizacion{
+        background: none !important;
+        padding: 13px 13px;
+        border-radius: 0px !important;
+        letter-spacing: 0 !important;
+        font-size: 1rem !important;
+        margin-left: 0rem !important;
+        transition: box-shadow 0.5s, color 1s;
+        color: rgb(89, 0, 255);
+        font-weight: bolder;
+        transition: color 1s !important;
+    }
+    #btn-cotizacion:hover{
+        box-shadow: none !important;
+        background: none !important;
+        color: #fff77c !important;
+    }
+    /* CONTENEDOR DEL BOTON DE COTIZACION */
+    #container-cotizacion{
+        transition: transform 0.5s;
+        margin: 5px 0% 0 0 !important;
+    }
+    #container-cotizacion:hover{
+        transform: translateY(-2px);
+    }
+    header section:first-child + label{
+        color: white;
+        display: block;
+        margin-top: 3rem;
+        font-size: 80px !important;
+        text-align: center;
+        display: none !important;
+    }
+    header > p{
+        color: white;
+        font-size: 1.1rem !important;
+        text-align: center;
+        margin:0%;
+        display: none;
+    }
+    header > p + section{
+        display: flex;
+        justify-content: center;
+    }
+    /* BOTON FANTASMA */
+    header section div,.btn-fantasma{
+        display: inline-flex;
+        justify-content: center;
+        letter-spacing: 2px;
+        margin: 50px 15px 0px 20px;    
+    }
+    /* CLASE BOTON FANTASMA */ 
+    .btn-fantasma{
+        margin-top: 0%;
+    }
+    header section > div a,.btn-fantasma a{
+        color: rgb(131,96,195);
+        font-size: 1rem;
+        font-weight: bold;
+        box-sizing: border-box;
+        padding: 15px;
+        border: 3px #fff77c solid;
+        border-radius: 30px;
+        background-color: #fff77c;
+        transition: background-color 1s, color 1s;
+    }
+    section > div a:hover{
+        background-color: rgba(255, 255, 255, 0);
+        color: #fff77c;
+    }
+    /* BOTONES FANTASMA EN EL HEADER */
+    #div-btn1 a,#div-btn2 a{
+        font-size: 0.63rem !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* SERVICIOS / MAIN */
+    main{
+        width: 100%;
+        padding-bottom: 0px !important;
+        background-color: #ECEFF1;
+        padding-top: 50px;
+    }
+    main > label{
+        display: block;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    main > section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        margin-left: 0rem !important;
+        margin-bottom: 2.5rem !important;
+        text-align: center;
+        background-color: white;
+        width: 17rem !important;
+        height: 16rem !important;
+        box-sizing: border-box;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgb(144,164,174);
+        cursor: pointer;
+        transition: transform 1s;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+    }
+    main section > article:first-of-type{
+        margin-bottom: 2.5rem !important;
+    }
+    .card:hover{
+        transform: scale(1.05) !important;
+    }
+    .card > img{
+        height: 7rem !important;
+        width: 7rem !important;
+    }
+    .card-label{
+        display: block;
+        font-size: 1.2rem !important;
+        color: rgb(131,96,195);
+        font-weight: bold;
+        margin: 0% !important;
+    }
+    .card-p{
+        font-size: 1rem !important;
+    }
+    /* VENDE MAS GANA MAS */
+    .gana{
+        padding: 50px;
+        background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+        background-blend-mode: soft-light;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #labgana{
+        font-size: 1.1rem !important; 
+        color: white;
+        margin-bottom: 1rem;
+    }
+    /* NUESTROS CLIENTES */
+    body > section:first-of-type + section{
+        padding: 2rem 2rem 0 2rem;
+    }
+    body > section:first-of-type + section > section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap !important;
+        justify-content: center;
+        align-items: center;
+    }
+    body > section:first-of-type + section label{
+        font-size: 25px;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    body > section:first-of-type + section article img{
+        filter: grayscale();
+        opacity: 0.5;
+        transition: transform 1s, filter 1s, opacity 1s;
+        margin-bottom: 2rem !important;
+    }
+    body > section:first-of-type + section article img:hover{
+        filter: none;
+        opacity: 1;
+        transform: rotateZ(10deg);
+    }
+    body > section:first-of-type + section article{
+        margin-right: 0rem !important;
+    }
+    #comercializadora{
+        width: 6rem !important;
+    }
+    #servi{
+        width: 8rem !important;
+    }
+    #lasalud{
+        width: 8rem !important;
+    }
+    #insumed{
+        width: 8rem !important;
+    }
+    #r78{
+        width: 8rem !important;
+    }
+     /* NUESTROS DISEÑOS */
+#diseños{
+    background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    box-sizing: border-box;
+    padding-top: 1rem;
+}
+/* LABEL DISEÑOS */
+#label-diseños{
+    display: block;
+    font-size: 1.5rem !important;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+/* CONTENEDOR DEL CARRUSEL Y LA IMAGEN */
+#container-diseños{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* IMAGEN AL LADO DEL CARRUSEL */
+#img-diseños{
+    height: 250px !important;
+}
+/* CONTENEDOR DEL CAROUSEL */
+.carousel{
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 1.5rem;
+}
+/* IMAGENES DEL CAROUSEL */
+.carousel-img{
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 1.5rem;
+}
+/* SOBRE NOSOTROS */
+#aboutus{
+    z-index: 1;
+    background: #ECEFF1;
+    background-blend-mode: soft-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 2rem;
+}
+/* CONTENEDOR DEL CIRCULO E IMAGEN */
+#container-circle{
+    z-index: 2;
+    position: relative;
+    margin-right: 0rem !important;
+    margin-bottom: 7rem;
+}
+/* CIRCULO */
+#circle{
+    z-index: -1;
+    background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    padding: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem !important;
+    left: 9rem !important;
+}
+/* IMAGEN */
+#img-about{
+    z-index: 4;
+    height: 20rem !important;
+}
+/* CONTAINER DEL TITULO Y PARRAFO */
+#container-about{
+    width: 60% !important;
+    position: relative;
+}
+/* PRIMER LABEL */
+#label1-about{
+    font-size: 1.5rem !important;
+    color: rgb(131,96,195);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: -6.5rem;
+    left: -2.5rem;
+    font-weight: bolder;
+}
+/* SEGUNDO LABEL */
+#label2-about{
+    font-size: 3rem !important;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;  
+    position: absolute;
+    top: -5.5rem;
+}
+/* PARRAFO DE ABOUT */
+#p-about{
+    font-size: 1rem !important;
+    text-align: justify;
+    margin: 0%;
+}
+/* CONTAINER DE LAS IMAGENES */
+#container-img-about{
+    display: flex;
+    justify-content: center;
+}
+/* IMAGENES DEBAJO DEL PARRAFO */
+#container-about img{
+    height: 3rem;
+}
+#container-about img:not(img[src*="./img/whatsapp.png"]){
+    margin-right: 1rem;
+}
+/* MANIPULANDO EL DROPDOWN */
+.dropdown-toggle{
+    border: none;
+    padding: 0%;
+}
+/* FLECHA QUE APARECE POR SER DROPDOWN */
+.dropdown-toggle::after{
+    visibility: hidden;
+}
+/* CONTAINER BOTON ABOUT */
+#container-btn-about{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+/* BOTON DE ABOUT */
+#btn-about{
+    color: rgb(131,96,195);
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 5px #fff77c solid;
+    border-radius: 30px;
+    background-color: #fff77c;
+    transition: background-color 1s, border 1s;
+}
+#btn-about:hover{
+    background-color: rgba(255, 255, 255, 0);
+    border: 5px rgb(131,96,195) solid;
+}
+/* GRID LLAMANOS */
+#grid-llamanos{
+    margin-bottom: 3rem;
+}
+/* GRID CONTACTANOS */
+#grid-contactanos span{
+    font-size: 2.2rem !important;
+    font-weight: bold;
+    color: #F8DD28;
+}
+/* FORMULARIO */
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100% !important;
+    padding: 0 !important;
+}
+/* CHECKBOXES */
+.form-check-input{
+    margin-bottom: 1.2rem !important;
+    font-size: 0.9rem;
+}
+/* INPUT WHATSAPP */
+input[name="whatsapp"]{
+    border-bottom-left-radius: 0px!important;
+    border-top-left-radius: 0px!important;
+}
+/* MODIFICANDO EL SELECT */
+#prenum{
+    height: 2.4rem;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    color: black;
+    font-weight: bold;
+    background-color: #F8DD28;
+}
+#prenum:hover{
+    background-color: #ffe850;
+    cursor: pointer;
+}
+#prenum option{
+    font-weight: bold;
+}
+    /* FOOTER */
+    footer{
+        background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+        background-blend-mode: soft-light;
+        padding: 50px;
+    }
+    footer p{
+        color:white;
+        text-align: center;
+        margin-top: 25px;
+    }
+    footer img{
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 2px white solid;
+    }
+  }
+ 
+ /* // Small devices (landscape phones, less than 768px) */
+ @media (max-width: 767.98px) { 
+    header{
+        width: 100%;
+        box-sizing: border-box;
+        padding-bottom: 3rem;
+        background-image: url(../img/banner.jpg),linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+        background-size: cover;
+        background-blend-mode: soft-light;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    header section:first-child{
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-around !important;
+        align-items: center;
+    }
+    #logo{
+        height: 200px;
+        width: 200px;
+    }
+    /* BARRA DE NAVEGACION COLLAPSE */
+    .navbar-collapse{
+        background-color: rgb(241, 241, 241);
+        border-radius: 10px;
+        padding: 15px 0;
+        max-width: 200px;
+        align-self:flex-end;
+    }
+    .navbar-toggler{
+        background-image: linear-gradient(to left,rgb(169, 123, 255),rgb(89, 0, 255)) !important;
+        border: none !important;
+        padding: 0%;
+    }
+    body ul{
+        margin-left: 0rem !important;
+        list-style-type: none;
+        list-style: none;
+        display: inline;
+    }
+    body nav ul li{
+        margin: 0px 0px 0px 0 !important;
+        font-size: 1rem;
+    }
+    body a{
+        text-decoration: none;
+        box-sizing: border-box;
+        padding: 5px 5px 10px 5px !important;
+    }
+    body nav a:not(.navbar-brand,#btn-inicio,#btn-cotizacion){
+        color:black !important;
+        font-weight: bold;
+        transition: color 1s, border-top 0.1s;
+        text-align: center;
+    }
+    #btn-inicio{
+        color: rgb(89, 0, 255) !important;
+        background-color: rgba(255, 255, 255, 0.055);
+        border-top: rgb(131,96,195) 5px solid !important;
+    }
+    body nav ul li a:hover:not(#btn-cotizacion,#btn-inicio){
+        color: rgb(89, 0, 255) !important;
+        background-color: rgba(255, 255, 255, 0.055);
+        border-top: none !important;
+        cursor: pointer;
+    }
+    /* BOTON COTIZACION */
+    header section nav div{
+        margin-top: 0%;
+    }
+    #btn-cotizacion{
+        background: linear-gradient(to right,rgb(109, 99, 255),rgb(131,96,195));
+        padding: 13px 13px;
+        border-radius: 25px;
+        letter-spacing: 2px;
+        font-size: 12px;
+        margin-left: 0rem !important;
+        transition: box-shadow 0.5s, color 1s, background-image 1s !important;
+    }
+    #btn-cotizacion:hover{
+        box-shadow: 0px 0px 10px rgb(189, 189, 189);
+        background-image: linear-gradient(to right,rgb(116, 106, 255),rgb(161, 113, 252)) !important;
+        border-radius: 15px !important;
+        color: white;
+    }
+    /* CONTENEDOR DEL BOTON DE COTIZACION */
+    #container-cotizacion{
+        transition: transform 0.5s;
+        margin: 5px 0% 0 0 !important;
+    }
+    #container-cotizacion:hover{
+        transform: translateY(-2px);
+    }
+    header section:first-child + label{
+        color: white;
+        display: block;
+        margin-top: 3rem;
+        font-size: 80px !important;
+        text-align: center;
+        display: none !important;
+    }
+    header > p{
+        color: white;
+        font-size: 1.1rem !important;
+        text-align: center;
+        margin:0%;
+        display: none;
+    }
+    header > p + section{
+        display: flex;
+        justify-content: center;
+    }
+    /* BOTON FANTASMA */
+    header section div,.btn-fantasma{
+        display: inline-flex;
+        justify-content: center;
+        letter-spacing: 2px;
+        margin: 50px 15px 0px 20px;    
+    }
+    /* CLASE BOTON FANTASMA */ 
+    .btn-fantasma{
+        margin-top: 0%;
+    }
+    header section > div a,.btn-fantasma a{
+        color: rgb(131,96,195);
+        font-size: 1rem;
+        font-weight: bold;
+        box-sizing: border-box;
+        padding: 15px;
+        border: 3px #fff77c solid;
+        border-radius: 30px;
+        background-color: #fff77c;
+        transition: background-color 1s, color 1s;
+    }
+    section > div a:hover{
+        background-color: rgba(255, 255, 255, 0);
+        color: #fff77c;
+    }
+    
+    /* SERVICIOS / MAIN */
+    main{
+        width: 100%;
+        padding-bottom: 0px !important;
+        background-color: #ECEFF1;
+        padding-top: 50px;
+    }
+    main > label{
+        display: block;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    main > section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        margin-left: 0rem !important;
+        margin-bottom: 2.5rem !important;
+        text-align: center;
+        background-color: white;
+        width: 32.5rem;
+        height: 300px;
+        box-sizing: border-box;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgb(144,164,174);
+        cursor: pointer;
+        transition: transform 1s;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    main section > article:first-of-type{
+        margin-bottom: 2.5rem !important;
+    }
+    .card:hover{
+        transform: scale(1.05) !important;
+    }
+    .card > img{
+        height: 350px;
+        width: 300px;
+    }
+    .card-label{
+        display: block;
+        font-size: 1.5rem;
+        color: rgb(131,96,195);
+        font-weight: bold;
+    }
+    .card-p{
+        font-size: 1.1rem;
+    }
+    /* VENDE MAS GANA MAS */
+    .gana{
+        padding: 50px;
+        background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+        background-blend-mode: soft-light;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #labgana{
+        font-size: 1.5rem; 
+        color: white;
+    }
+    /* NUESTROS CLIENTES */
+    body > section:first-of-type + section{
+        padding: 2rem 2rem 0 2rem;
+    }
+    body > section:first-of-type + section > section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    body > section:first-of-type + section label{
+        font-size: 25px;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    body > section:first-of-type + section article img{
+        filter: grayscale();
+        opacity: 0.5;
+        transition: transform 1s, filter 1s, opacity 1s;
+        margin-bottom: 1rem;
+    }
+    body > section:first-of-type + section article img:hover{
+        filter: none;
+        opacity: 1;
+        transform: rotateZ(10deg);
+    }
+    body > section:first-of-type + section article{
+        margin-right: 6rem;
+    }
+    #comercializadora{
+        width: 10rem !important;
+    }
+    #servi{
+        width: 13rem !important;
+    }
+    #lasalud{
+        width: 13rem !important;
+    }
+    #insumed{
+        width: 13rem !important;
+    }
+    #r78{
+        width: 13rem !important;
+    }
+    /* NUESTROS DISEÑOS */
+#diseños{
+    background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    box-sizing: border-box;
+    padding-top: 1rem;
+}
+/* LABEL DISEÑOS */
+#label-diseños{
+    display: block;
+    font-size: 1.5rem !important;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+/* CONTENEDOR DEL CARRUSEL Y LA IMAGEN */
+#container-diseños{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* IMAGEN ARRIBA DEL CARRUSEL */
+#img-diseños{
+    height: 300px;
+}
+/* CONTENEDOR DEL CAROUSEL */
+.carousel{
+    width: 250px !important;
+    height: 250px !important;
+    border-radius: 1.5rem;
+}
+/* IMAGENES DEL CAROUSEL */
+.carousel-img{
+    width: 250px !important;
+    height: 250px !important;
+    border-radius: 1.5rem;
+}
+/* SOBRE NOSOTROS */
+#aboutus{
+    z-index: 1;
+    background: #ECEFF1;
+    background-blend-mode: soft-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 2rem;
+}
+/* CONTENEDOR DEL CIRCULO E IMAGEN */
+#container-circle{
+    z-index: 2;
+    position: relative;
+    margin-right: 0rem !important;
+    margin-bottom: 7rem;
+}
+/* CIRCULO */
+#circle{
+    z-index: -1;
+    background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    padding: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem !important;
+    left: 9rem !important;
+}
+/* IMAGEN */
+#img-about{
+    z-index: 4;
+    height: 20rem !important;
+}
+/* CONTAINER DEL TITULO Y PARRAFO */
+#container-about{
+    width: 60% !important;
+    position: relative;
+}
+/* PRIMER LABEL */
+#label1-about{
+    font-size: 1.5rem !important;
+    color: rgb(131,96,195);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: -6.5rem;
+    left: -2.5rem;
+    font-weight: bolder;
+}
+/* SEGUNDO LABEL */
+#label2-about{
+    font-size: 3rem !important;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;  
+    position: absolute;
+    top: -5.5rem;
+}
+/* PARRAFO DE ABOUT */
+#p-about{
+    font-size: 1rem !important;
+    text-align: justify;
+    margin: 0%;
+}
+/* CONTAINER DE LAS IMAGENES */
+#container-img-about{
+    display: flex;
+    justify-content: center;
+}
+/* IMAGENES DEBAJO DEL PARRAFO */
+#container-about img{
+    height: 3rem;
+}
+#container-about img:not(img[src*="./img/whatsapp.png"]){
+    margin-right: 1rem;
+}
+/* MANIPULANDO EL DROPDOWN */
+.dropdown-toggle{
+    border: none;
+    padding: 0%;
+}
+/* FLECHA QUE APARECE POR SER DROPDOWN */
+.dropdown-toggle::after{
+    visibility: hidden;
+}
+/* CONTAINER BOTON ABOUT */
+#container-btn-about{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+/* BOTON DE ABOUT */
+#btn-about{
+    color: rgb(131,96,195);
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 5px #fff77c solid;
+    border-radius: 30px;
+    background-color: #fff77c;
+    transition: background-color 1s, border 1s;
+}
+#btn-about:hover{
+    background-color: rgba(255, 255, 255, 0);
+    border: 5px rgb(131,96,195) solid;
+}
+/* FORMULARIO */
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75% !important;
+    padding: 0 5rem;
+}
+/* INPUT WHATSAPP */
+input[name="whatsapp"]{
+    border-bottom-left-radius: 0px!important;
+    border-top-left-radius: 0px!important;
+}
+/* MODIFICANDO EL SELECT */
+#prenum{
+    height: 2.4rem;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    color: black;
+    font-weight: bold;
+    background-color: #F8DD28;
+}
+#prenum option{
+    font-weight: bold;
+}
+    /* FOOTER */
+    footer{
+        background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+        background-blend-mode: soft-light;
+        padding: 50px;
+    }
+    footer p{
+        color:white;
+        text-align: center;
+        margin-top: 25px;
+    }
+    footer img{
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 2px white solid;
+    }
+  }
+ 
+ /* // Medium devices (tablets, less than 992px) */
+ @media (max-width: 1019px) { 
+                /* HEADER */
+header{
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 3rem;
+    background-image: url(../img/banner.jpg),linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header section:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    height: 200px;
+    width: 200px;
+}
+body ul{
+    margin-left: 1rem;
+    list-style-type: none;
+    list-style: none;
+    display: inline;
+}
+body nav{
+    display: inline;
+}
+body nav ul li{
+    display: inline;
+    margin-right: 10px;
+    font-size: 0.89rem !important;
+}
+body a{
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 15px 5px 10px 5px;
+}
+body nav a{
+    color:white;
+    transition: color 1s, border-top 0.1s;
+}
+#btn-inicio{
+    color: #fff77c;
+    background-color: rgba(255, 255, 255, 0.055);
+    border-top: 5px #fff77c solid;
+}
+body nav ul li a:hover:not(#btn-cotizacion){
+    color: #fff77c;
+    background-color: rgba(255, 255, 255, 0.055);
+    border-top: 5px #fff77c solid;
+    cursor: pointer;
+}
+/* BOTON COTIZACION */
+header section nav div{
+    margin-top: 0%;
+}
+#btn-cotizacion{
+    background: linear-gradient(to right,rgb(109, 99, 255),rgb(131,96,195));
+    padding: 13px 13px;
+    border-radius: 25px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-left: 0rem !important;
+    transition: box-shadow 0.5s;
+}
+#btn-cotizacion:hover{
+    box-shadow: 0px 0px 10px rgb(189, 189, 189);
+    background: linear-gradient(to right,rgb(116, 106, 255),rgb(161, 113, 252));
+}
+/* CONTENEDOR DEL BOTON DE COTIZACION */
+#container-cotizacion{
+    transition: transform 0.5s;
+}
+#container-cotizacion{
+    transform: translateY(-2px);
+}
+header section:first-child + label{
+    color: white;
+    display: block;
+    margin-top: 3rem;
+    font-size: 80px !important;
+    text-align: center;
+}
+header > p{
+    color: white;
+    font-size: 1.1rem !important;
+    text-align: center;
+    margin:0%;
+}
+header > p + section{
+    display: flex;
+    justify-content: center;
+}
+/* BOTON FANTASMA */
+#div-btn1,#div-btn2,.btn-fantasma{
+    display: inline-flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin: 50px 15px 0px 20px;    
+}
+/* INICIAR SESION */
+#div-btn1{
+    background:none;
+    border: none;
+}
+/* CLASE BOTON FANTASMA */ 
+.btn-fantasma{
+    margin-top: 0%;
+}
+#div-btn1 a,#div-btn2 a,.btn-fantasma a{
+    color: rgb(131,96,195);
+    font-size: 1rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 3px #fff77c solid;
+    border-radius: 30px;
+    background-color: #fff77c;
+    transition: background-color 1s, color 1s;
+    display: flex;
+    align-items: center;
+}
+#div-btn1 a:hover,#div-btn2 a:hover,.btn-fantasma a:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff77c;
+}
+/* MODAL */
+.modal{
+    padding: 0 !important;
+    margin: 0% !important;
+}
+/* MODAL HEADER */
+.modal-header{
+    padding-bottom: 0% !important;
+}
+/* SERVICIOS / MAIN */
+main{
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: #ECEFF1;
+    padding-top: 50px;
+}
+main > label{
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+main > section{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    margin-left: 2.2rem;
+    text-align: center;
+    background-color: white;
+    width: 220px;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 12px !important;
+    box-shadow: 0px 0px 10px rgb(144,164,174);
+    cursor: pointer;
+    transition: transform 1s;
+}
+main section > article:first-of-type{
+    margin: 0%;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card > img{
+    height: 175px;
+    width: 175px;
+}
+.card > label{
+    display: block;
+    font-size: 15px;
+    color: rgb(131,96,195);
+    font-weight: bold;
+}
+.card > p{
+    font-size: 0.8rem;
+}
+/* VENDE MAS GANA MAS */
+.gana{
+    padding: 50px;
+    background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    background-blend-mode: soft-light;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+#labgana{
+    font-size: 2rem; 
+    color: white;
+}
+/* NUESTROS CLIENTES */
+body > section:first-of-type + section{
+    padding: 2rem 2rem 0 2rem;
+}
+body > section:first-of-type + section > section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body > section:first-of-type + section label{
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+body > section:first-of-type + section article img{
+    filter: grayscale();
+    opacity: 0.5;
+    transition: transform 1s, filter 1s, opacity 1s;
+    margin-bottom: 1rem;
+}
+body > section:first-of-type + section article img:hover{
+    filter: none;
+    opacity: 1;
+    transform: rotateZ(10deg);
+}
+#comercializadora{
+    width: 6rem !important;
+}
+#servi{
+    width: 8rem !important;
+}
+#lasalud{
+    width: 8rem !important;
+}
+#insumed{
+    width: 8rem !important;
+}
+#r78{
+    width: 8rem !important;
+}
+/* NUESTROS DISEÑOS */
+#diseños{
+    background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    box-sizing: border-box;
+    padding-top: 1rem;
+}
+/* LABEL DISEÑOS */
+#label-diseños{
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+/* CONTENEDOR DEL CARRUSEL Y LA IMAGEN */
+#container-diseños{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENEDOR DEL CAROUSEL */
+.carousel{
+    width: 350px ;
+    height: 350px ;
+    border-radius: 1.5rem;
+}
+/* IMAGENES DEL CAROUSEL */
+.carousel-img{
+    width: 350px ;
+    height: 350px ;
+    border-radius: 1.5rem;
+}
+/* SOBRE NOSOTROS */
+#aboutus{
+    z-index: 1;
+    background: #ECEFF1;
+    background-blend-mode: soft-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 2rem;
+}
+/* CONTENEDOR DEL CIRCULO E IMAGEN */
+#container-circle{
+    z-index: 2;
+    position: relative;
+    margin-right: 10rem;
+}
+/* CIRCULO */
+#circle{
+    z-index: -1;
+    background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    padding: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 2rem;
+    left: 15rem;
+}
+/* IMAGEN */
+#img-about{
+    z-index: 4;
+    height: 30rem;
+}
+/* CONTAINER DEL TITULO Y PARRAFO */
+#container-about{
+    width: 35%;
+    position: relative;
+}
+/* PRIMER LABEL */
+#label1-about{
+    font-size: 1.5rem !important;
+    color: rgb(131,96,195);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: -6.5rem;
+    left: -2.5rem;
+    font-weight: bolder;
+}
+/* SEGUNDO LABEL */
+#label2-about{
+    font-size: 3rem !important;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;  
+    position: absolute;
+    top: -5.5rem;
+}
+/* PARRAFO DE ABOUT */
+#p-about{
+    font-size: 0.9rem !important;
+    text-align: justify;
+    margin: 0%;
+}
+/* CONTAINER DE LAS IMAGENES */
+#container-img-about{
+    display: flex;
+    justify-content: center;
+}
+/* IMAGENES DEBAJO DEL PARRAFO */
+#container-about img{
+    height: 3rem;
+}
+#container-about img:not(img[src*="./img/whatsapp.png"]){
+    margin-right: 1rem;
+}
+.dropdown-toggle{
+    border: none;
+    padding: 0%;
+}
+/* FLECHA QUE APARECE POR SER DROPDOWN */
+.dropdown-toggle::after{
+    visibility: hidden;
+}
+/* CONTAINER BOTON ABOUT */
+#container-btn-about{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+/* BOTON DE ABOUT */
+#btn-about{
+    color: rgb(131,96,195);
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 5px #fff77c solid;
+    border-radius: 30px;
+    background-color: #fff77c;
+    transition: background-color 1s, border 1s;
+}
+#btn-about:hover{
+    background-color: rgba(255, 255, 255, 0);
+    border: 5px rgb(131,96,195) solid;
+}
+/* GRID CONTAINER */
+.row{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+/* GRID CONTACTANOS */
+.grid-contactanos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* FORMULARIO */
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+/* INPUT WHATSAPP */
+input[name="whatsapp"]{
+    border-bottom-left-radius: 0px!important;
+    border-top-left-radius: 0px!important;
+}
+/* MODIFICANDO EL SELECT */
+#prenum{
+    height: 2.4rem;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    color: black;
+    font-weight: bold;
+    background-color: #F8DD28;
+}
+#prenum:hover{
+    background-color: #ffe850;
+    cursor: pointer;
+}
+#prenum option{
+    font-weight: bold;
+}
+/* FOOTER */
+footer{
+    background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    background-blend-mode: soft-light;
+    padding: 50px;
+}
+footer p{
+    color:white;
+    text-align: center;
+    margin-top: 25px;
+}
+footer img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px white solid;
+}
+  }
+ 
+/* // Large devices (desktops, less than 1241.98px) */
+  @media (max-width: 1241.98px) { 
+           /* HEADER */
+header{
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 3rem;
+    background-image: url(../img/banner.jpg),linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header section:first-child{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo{
+    height: 200px;
+    width: 200px;
+}
+body ul{
+    margin-left: 1rem;
+    list-style-type: none;
+    list-style: none;
+    display: inline;
+}
+body nav{
+    display: inline;
+}
+body nav ul li{
+    display: inline;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+body a{
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 15px 5px 10px 5px;
+}
+body nav a{
+    color:white;
+    transition: color 1s, border-top 0.1s;
+}
+#btn-inicio{
+    color: #fff77c;
+    background-color: rgba(255, 255, 255, 0.055);
+    border-top: 5px #fff77c solid;
+}
+body nav ul li a:hover:not(#btn-cotizacion){
+    color: #fff77c;
+    background-color: rgba(255, 255, 255, 0.055);
+    border-top: 5px #fff77c solid;
+    cursor: pointer;
+}
+/* BOTON COTIZACION */
+header section nav div{
+    margin-top: 0%;
+}
+#btn-cotizacion{
+    background: linear-gradient(to right,rgb(109, 99, 255),rgb(131,96,195));
+    padding: 13px 13px;
+    border-radius: 25px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-left: 1rem;
+    transition: box-shadow 0.5s;
+}
+#btn-cotizacion:hover{
+    box-shadow: 0px 0px 10px rgb(189, 189, 189);
+    background: linear-gradient(to right,rgb(116, 106, 255),rgb(161, 113, 252));
+    color: white;
+}
+/* CONTENEDOR DEL BOTON DE COTIZACION*/
+#container-cotizacion{
+    transition: transform 0.5s;
+}
+#container-cotizacion:hover{
+    transform: translateY(-3px) !important;  
+}
+header section:first-child + label{
+    color: white;
+    display: block;
+    margin-top: 3rem;
+    font-size: 100px;
+    text-align: center;
+}
+header > p{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    margin:0%;
+}
+header > p + section{
+    display: flex;
+    justify-content: center;
+}
+/* BOTON FANTASMA */
+#div-btn1,#div-btn2,.btn-fantasma{
+    display: inline-flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin: 50px 15px 0px 20px;    
+}
+/* INICIAR SESION */
+#div-btn1{
+    background:none;
+    border: none;
+}
+/* CLASE BOTON FANTASMA */ 
+.btn-fantasma{
+    margin-top: 0%;
+}
+#div-btn1 a,#div-btn2 a,.btn-fantasma a{
+    color: rgb(131,96,195);
+    font-size: 1rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 3px #fff77c solid;
+    border-radius: 30px;
+    background-color: #fff77c;
+    transition: background-color 1s, color 1s;
+    display: flex;
+    align-items: center;
+}
+#div-btn1 a:hover,#div-btn2 a:hover,.btn-fantasma a:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff77c;
+}
+/* MODAL */
+.modal{
+    padding: 0 !important;
+    margin: 0% !important;
+}
+/* MODAL HEADER */
+.modal-header{
+    padding-bottom: 0% !important;
+}
+/* SERVICIOS / MAIN */
+main{
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: #ECEFF1;
+    padding-top: 50px;
+}
+main > label{
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+main > section{
+    display: flex;
+    justify-content: center;
+}
+main section > article{
+    margin-left: 2rem;
+    text-align: center;
+    background-color: white;
+    width: 300px;
+    height: 380px;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 12px !important;
+    box-shadow: 0px 0px 10px rgb(144,164,174);
+    cursor: pointer;
+    transition: transform 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section > article:first-of-type{
+    margin: 0%;
+}
+main section article:hover{
+    transform: scale(1.1);
+}
+main section article > img{
+    height: 200px;
+    width: 200px;
+}
+.card-label{
+    display: block;
+    font-size: 1.5rem;
+    color: rgb(131,96,195);
+    font-weight: bold;
+    margin: 1rem 0 1rem 0;
+}
+.card-p{
+    font-size: 1rem;
+}
+/* VENDE MAS GANA MAS */
+body > section:first-of-type{
+    padding: 50px;
+    background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    background-blend-mode: soft-light;
+    display: flex;
+    justify-content: space-between;
+}
+body > section:first-of-type label{
+    font-size: 3rem;
+    color: white;
+}
+/* NUESTROS CLIENTES */
+body > section:first-of-type + section{
+    padding: 2rem 2rem 0 2rem;
+}
+body > section:first-of-type + section > section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body > section:first-of-type + section label{
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+body > section:first-of-type + section article img{
+    filter: grayscale();
+    opacity: 0.5;
+    transition: transform 1s, filter 1s, opacity 1s;
+    margin-bottom: 1rem;
+}
+body > section:first-of-type + section article img:hover{
+    filter: none;
+    opacity: 1;
+    transform: rotateZ(10deg);
+}
+body > section:first-of-type + section article{
+    margin-right: 2rem;
+}
+#comercializadora{
+    width: 7rem;
+}
+#servi{
+    width: 10rem;
+}
+#lasalud{
+    width: 10rem;
+}
+#insumed{
+    width: 10rem;
+}
+#r78{
+    width: 10rem;
+}
+/* NUESTROS DISEÑOS */
+#diseños{
+    background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    box-sizing: border-box;
+    padding-top: 1rem;
+}
+/* LABEL DISEÑOS */
+#label-diseños{
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+/* CONTENEDOR DEL CARRUSEL Y LA IMAGEN */
+#container-diseños{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENEDOR DEL CAROUSEL */
+.carousel{
+    width: 450px;
+    height: 450px;
+    border-radius: 1.5rem;
+}
+/* IMAGENES DEL CAROUSEL */
+.carousel-img{
+    width: 450px;
+    height: 450px;
+    border-radius: 1.5rem;
+}
+/* SOBRE NOSOTROS */
+#aboutus{
+    z-index: 1;
+    background: #ECEFF1;
+    background-blend-mode: soft-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 2rem;
+}
+/* CONTENEDOR DEL CIRCULO */
+#container-circle{
+    z-index: 2;
+    position: relative;
+    margin-right: 10rem;
+}
+/* CIRCULO */
+#circle{
+    z-index: -1;
+    background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    padding: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 2rem;
+    left: 15rem;
+}
+/* IMAGEN */
+#img-about{
+    z-index: 4;
+    height: 30rem;
+}
+/* CONTAINER DEL TITULO Y PARRAFO */
+#container-about{
+    width: 35%;
+    position: relative;
+}
+/* PRIMER LABEL */
+#label1-about{
+    font-size: 2.5rem;
+    color: rgb(131,96,195);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: -6.5rem;
+    left: -2.5rem;
+    font-weight: bolder;
+}
+/* SEGUNDO LABEL */
+#label2-about{
+    font-size: 4rem;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;  
+    position: absolute;
+    top: -5.5rem;
+}
+/* PARRAFO DE ABOUT */
+#p-about{
+    font-size: 1.1rem;
+    text-align: justify;
+    margin: 0%;
+}
+/* CONTAINER DE LAS IMAGENES */
+#container-img-about{
+    display: flex;
+    justify-content: center;
+}
+/* IMAGENES DEBAJO DEL PARRAFO */
+#container-about img{
+    height: 3rem;
+}
+#container-about img:not(img[src*="./img/whatsapp.png"]){
+    margin-right: 1rem;
+}
+.dropdown-toggle{
+    border: none;
+    padding: 0%;
+}
+/* FLECHA QUE APARECE POR SER DROPDOWN */
+.dropdown-toggle::after{
+    visibility: hidden;
+}
+/* CONTAINER BOTON ABOUT */
+#container-btn-about{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+/* BOTON DE ABOUT */
+#btn-about{
+    color: rgb(131,96,195);
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 5px #fff77c solid;
+    border-radius: 30px;
+    background-color: #fff77c;
+    transition: background-color 1s, border 1s;
+}
+#btn-about:hover{
+    background-color: rgba(255, 255, 255, 0);
+    border: 5px rgb(131,96,195) solid;
+}
+/* CONTACTO */
+#contacto{
+    background-color: /*#F8DD28;*/rgb(121, 49, 255);
+    line-height: 2;
+    color: white;
+}
+/* GRID CONTAINER */
+.row{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+/* GRID HABLEMOS */
+#grid-hablemos{
+    font-size: 1rem;
+}
+/* SPAN */
+#grid-hablemos > span{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #F8DD28;
+}
+/* IMAGENES DE REDES SOCIALES */
+#grid-hablemos > a img{
+    height: 2.3rem;
+    margin-bottom: 3rem;
+}
+/* GRID LLAMANOS */
+#grid-llamanos{
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+/* MODIFICANDO LOS SPAN */
+#grid-llamanos > span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F8DD28;
+}
+/* GRID CONTACTANOS */
+#grid-contactanos span{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #F8DD28;
+}
+/* FORMULARIO */
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100% !important;
+}
+/* CONTAINER CHECKBOXES */
+form > div{
+    display: flex;
+    align-items: baseline;
+}
+/* CHECKBOXES */
+.form-check-input{
+    margin-bottom: 1.2rem !important;
+}
+/* MANIPULANDO EL CHECK DE LOS CHECKBOXES */
+.form-check-input:checked{
+    background-color: #f8d228ea !important;
+    border-color: #f8d228ea !important;
+}
+/* INPUTS */
+input[class="form-control"],.form-select{
+    border-radius: 10px !important;
+    margin-bottom: 1rem;
+    border: none !important;
+    height: 2.3rem;
+}
+/* INPUT WHATSAPP */
+input[name="whatsapp"]{
+    border-bottom-left-radius: 0px!important;
+    border-top-left-radius: 0px!important;
+}
+/* MODIFICANDO EL SELECT */
+#prenum{
+    height: 2.4rem;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    color: black;
+    font-weight: bold;
+    background-color: #F8DD28;
+}
+#prenum:hover{
+    background-color: #ffe850;
+    cursor: pointer;
+}
+#prenum option{
+    font-weight: bold;
+}
+/* TEXT AREA */
+textarea{
+    border-radius: 10px !important;
+    margin-bottom: 1rem !important;
+    border: none !important;
+    resize: both !important;
+}
+/* BOTON SUBMIT */
+input[type="submit"]{
+    background-color: #ffdd00de !important;
+    border-color: #ffdd00de;
+    margin-bottom: 3rem;
+    color: rgb(131,96,195);
+    font-weight: bold;
+}
+input[type="submit"]:hover{
+    background-color: #ffe228 !important;
+    color: rgb(131,96,195);
+}
+input[type="submit"]:active{
+    background-color: #ffdd00ea !important;
+}
+/* FOOTER */
+footer{
+    background: #424242;
+    background-blend-mode: soft-light;
+    padding: 50px;
+}
+footer p{
+    color:white;
+    text-align: center;
+    margin-top: 25px;
+}
+footer img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px white solid;
+}
+}
+ /* // X-Large devices (large desktops, less than 1400px) */
+ @media (min-width: 1242px) { 
+                /* HEADER */
+header{
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 3rem;
+    background-image: url(../img/banner.jpg),linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header section:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    height: 200px;
+    width: 200px;
+}
+body ul{
+    margin-left: 1rem;
+    list-style-type: none;
+    list-style: none;
+    display: inline;
+}
+body nav{
+    display: inline;
+}
+body nav ul li{
+    display: inline;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+body a{
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 15px 5px 10px 5px;
+}
+body nav a{
+    color:white;
+    transition: color 1s, border-top 0.1s;
+}
+#btn-inicio{
+    color: #fff77c;
+    background-color: rgba(255, 255, 255, 0.055);
+    border-top: 5px #fff77c solid;
+}
+body nav ul li a:hover:not(#btn-cotizacion){
+    color: #fff77c;
+    background-color: rgba(255, 255, 255, 0.055);
+    border-top: 5px #fff77c solid;
+    cursor: pointer;
+}
+/* BOTON COTIZACION */
+header section nav div{
+    margin-top: 0%;
+}
+#btn-cotizacion{
+    background: linear-gradient(to right,rgb(109, 99, 255),rgb(131,96,195));
+    padding: 13px 13px;
+    border-radius: 25px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-left: 1rem;
+    transition: box-shadow 0.5s;
+}
+#btn-cotizacion:hover{
+    box-shadow: 0px 0px 10px rgb(189, 189, 189);
+    background: linear-gradient(to right,rgb(116, 106, 255),rgb(161, 113, 252));
+    color: white;
+}
+/* CONTENEDOR DEL BOTON DE COTIZACION */
+#container-cotizacion{
+    transition: transform 0.5s;
+}
+#container-cotizacion:hover{
+    transform: translateY(-3px) !important;  
+}
+header section:first-child + label{
+    color: white;
+    display: block;
+    margin-top: 3rem;
+    font-size: 100px;
+    text-align: center;
+}
+header > p{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    margin:0%;
+}
+header > p + section{
+    display: flex;
+    justify-content: center;
+}
+/* BOTON FANTASMA */
+#div-btn1,#div-btn2,.btn-fantasma{
+    display: inline-flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin: 50px 15px 0px 20px;    
+}
+/* INICIAR SESION */
+#div-btn1{
+    background:none;
+    border: none;
+}
+/* CLASE BOTON FANTASMA */ 
+.btn-fantasma{
+    margin-top: 0%;
+}
+#div-btn1 a,#div-btn2 a,.btn-fantasma a{
+    color: rgb(131,96,195);
+    font-size: 1rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 3px #fff77c solid;
+    border-radius: 30px;
+    background-color: #fff77c;
+    transition: background-color 1s, color 1s;
+    display: flex;
+    align-items: center;
+}
+#div-btn1 a:hover,#div-btn2 a:hover,.btn-fantasma a:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff77c;
+}
+/* MODAL */
+.modal{
+    padding: 0 !important;
+    margin: 0% !important;
+}
+/* MODAL HEADER */
+.modal-header{
+    padding-bottom: 0% !important;
+}
+/* SERVICIOS / MAIN */
+main{
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: #ECEFF1;
+    padding-top: 50px;
+}
+main > label{
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+main > section{
+    display: flex;
+    justify-content: center;
+}
+main section > article{
+    box-sizing: border-box;
+    margin-left: 3rem;
+    text-align: center;
+    background-color: white;
+    width: 350px;
+    height: 30rem !important;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 12px !important;
+    box-shadow: 0px 0px 10px rgb(144,164,174);
+    cursor: pointer;
+    transition: transform 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section > article:first-of-type{
+    margin: 0%;
+}
+main section article:hover{
+    transform: scale(1.1);
+}
+main section article > img{
+    height: 250px;
+    width: 250px;
+}
+.card-label{
+    display: block;
+    font-size: 1.7rem;
+    color: rgb(131,96,195);
+    font-weight: bold;
+    margin: 1rem 0 1rem 0;
+}
+.card-p{
+    font-size: 1.2rem;
+}
+/* VENDE MAS GANA MAS */
+body > section:first-of-type{
+    padding: 50px;
+    background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    background-blend-mode: soft-light;
+    display: flex;
+    justify-content: space-between;
+}
+#labgana{
+    font-size: 3rem;
+    color: white;
+}
+/* NUESTROS CLIENTES */
+body > section:first-of-type + section{
+    padding: 2rem 2rem 0 2rem;
+    background: #ECEFF1;
+}
+body > section:first-of-type + section > section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body > section:first-of-type + section label{
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+body > section:first-of-type + section article img{
+    filter: grayscale();
+    opacity: 0.5;
+    transition: transform 1s, filter 1s, opacity 1s;
+    margin-bottom: 1rem;
+}
+body > section:first-of-type + section article img:hover{
+    filter: none;
+    opacity: 1;
+    transform: rotateZ(10deg);
+}
+body > section:first-of-type + section article{
+    margin-right: 2rem;
+}
+#comercializadora{
+    width: 10rem;
+}
+#servi{
+    width: 13rem;
+}
+#lasalud{
+    width: 13rem;
+}
+#insumed{
+    width: 13rem;
+}
+#r78{
+    width: 13rem;
+}
+/* NUESTROS DISEÑOS */
+#diseños{
+    background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    box-sizing: border-box;
+    padding-top: 1rem;
+}
+/* LABEL DISEÑOS */
+#label-diseños{
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+/* CONTENEDOR DEL CARRUSEL Y LA IMAGEN */
+#container-diseños{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENEDOR DEL CAROUSEL */
+.carousel{
+    width: 450px;
+    height: 450px;
+    border-radius: 1.5rem;
+}
+/* IMAGENES DEL CAROUSEL */
+.carousel-img{
+    width: 450px;
+    height: 450px;
+    border-radius: 1.5rem;
+}
+/* SOBRE NOSOTROS */
+#aboutus{
+    z-index: 1;
+    background: #ECEFF1;
+    background-blend-mode: soft-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 2rem;
+}
+/* CONTENEDOR DEL CIRCULO */
+#container-circle{
+    z-index: 2;
+    position: relative;
+    margin-right: 10rem;
+}
+/* CIRCULO */
+#circle{
+    z-index: -1;
+    background: linear-gradient(to right,rgb(131,96,195),rgb(46,191,145));
+    padding: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 2rem;
+    left: 15rem;
+}
+/* IMAGEN */
+#img-about{
+    z-index: 4;
+    height: 30rem;
+}
+/* CONTAINER DEL TITULO Y PARRAFO */
+#container-about{
+    width: 35%;
+    position: relative;
+}
+/* PRIMER LABEL */
+#label1-about{
+    font-size: 2.5rem;
+    color: rgb(131,96,195);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: -6.5rem;
+    left: -2.5rem;
+    font-weight: bolder;
+}
+/* SEGUNDO LABEL */
+#label2-about{
+    font-size: 4rem;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;  
+    position: absolute;
+    top: -5.5rem;
+}
+/* PARRAFO DE ABOUT */
+#p-about{
+    font-size: 1.1rem;
+    text-align: justify;
+    margin: 0%;
+}
+/* CONTAINER DE LAS IMAGENES */
+#container-img-about{
+    display: flex;
+    justify-content: center;
+}
+/* IMAGENES DEBAJO DEL PARRAFO */
+#container-about img{
+    height: 3rem;
+}
+#container-about img:not(img[src*="./img/whatsapp.png"]){
+    margin-right: 1rem;
+}
+.dropdown-toggle{
+    border: none;
+    padding: 0%;
+}
+/* FLECHA QUE APARECE POR SER DROPDOWN */
+.dropdown-toggle::after{
+    visibility: hidden;
+}
+/* CONTAINER BOTON ABOUT */
+#container-btn-about{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+/* BOTON DE ABOUT */
+#btn-about{
+    color: rgb(131,96,195);
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 5px #fff77c solid;
+    border-radius: 30px;
+    background-color: #fff77c;
+    transition: background-color 1s, border 1s;
+}
+#btn-about:hover{
+    background-color: rgba(255, 255, 255, 0);
+    border: 5px rgb(131,96,195) solid;
+}
+/* CONTACTO */
+#contacto{
+    background-color: /*#F8DD28;*/rgb(121, 49, 255);
+    line-height: 2;
+    color: white;
+}
+/* GRID CONTAINER */
+.row{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+/* GRID HABLEMOS */
+#grid-hablemos{
+    font-size: 1.1rem;
+}
+/* SPAN */
+#grid-hablemos > span{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #F8DD28;
+}
+/* IMAGENES DE REDES SOCIALES */
+#grid-hablemos > a img{
+    height: 2.3rem;
+}
+/* GRID LLAMANOS */
+#grid-llamanos{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+/* MODIFICANDO LOS SPAN */
+#grid-llamanos > span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F8DD28;
+}
+/* GRID CONTACTANOS */
+#grid-contactanos span{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #F8DD28;
+}
+/* FORMULARIO */
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+/* CONTAINER CHECKBOXES */
+form > div{
+    display: flex;
+    align-items: baseline;
+}
+/* CHECKBOXES */
+.form-check-input{
+    margin-bottom: 1.2rem !important;
+}
+/* MANIPULANDO EL CHECK DE LOS CHECKBOX */
+.form-check-input:checked{
+    background-color: #f8d228ea !important;
+    border-color: #f8d228ea !important;
+}
+/* INPUTS */
+input[class="form-control"],.form-select{
+    border-radius: 10px !important;
+    margin-bottom: 1rem;
+    border: none !important;
+    height: 2.3rem;
+}
+/* INPUT WHATSAPP */
+input[name="whatsapp"]{
+    border-bottom-left-radius: 0px!important;
+    border-top-left-radius: 0px!important;
+}
+/* MODIFICANDO EL SELECT */
+#prenum{
+    height: 2.4rem;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    color: black;
+    font-weight: bold;
+    background-color: #F8DD28;
+}
+#prenum:hover{
+    background-color: #ffe850;
+    cursor: pointer;
+}
+#prenum option{
+    font-weight: bold;
+}
+/* TEXT AREA */
+textarea{
+    border-radius: 10px !important;
+    margin-bottom: 1rem !important;
+    border: none !important;
+    resize: both !important;
+}
+/* BOTON SUBMIT */
+input[type="submit"]{
+    background-color: #ffdd00de !important;
+    border-color: #ffdd00de !important;
+    margin-bottom: 3rem;
+    color: rgb(131,96,195);
+    font-weight: bold;
+}
+input[type="submit"]:hover{
+    background-color: #ffe228 !important;
+    color: rgb(131,96,195) !important;
+}
+input[type="submit"]:active{
+    background-color: #ffdd00ea !important;
+}
+/* FOOTER */
+footer{
+    background: #424242;
+    background-blend-mode: soft-light;
+    padding: 50px;
+}
+footer p{
+    color:white;
+    text-align: center;
+    margin-top: 25px;
+}
+footer img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px white solid;
+}
+  }
